@@ -1,9 +1,9 @@
-const express = require('express');
-const User = require('./models/User');
-const auth = require('./auth');
+import express from 'express';
+import User from './models/User';
+import auth from './auth';
 
-const bcrypt = require('bcrypt-nodejs');
-const jwt = require('jwt-simple');
+import bcrypt from 'bcrypt-nodejs';
+import jwt from 'jwt-simple';
 
 module.exports = function (app) {
 

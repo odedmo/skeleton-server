@@ -1,6 +1,6 @@
-const User = require('./models/User');
-const bcrypt = require('bcrypt-nodejs');
-const jwt = require('jwt-simple');
+import User from './models/User';
+import bcrypt from 'bcrypt-nodejs';
+import jwt from 'jwt-simple';
 
 const createSendToken = (res, user) => {
     let payload = {
